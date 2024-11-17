@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     
+     <style>
+         body{
+            background-image: url('200.webp'); 
+            background-size: cover;
+            background-position: fixed;
+             background-color: #000000b1;
+             color: white;
+         }
+         
+     </style>
+ </head>
+ 
+<body>
+    <h1>
+       FORM
+    </h1>
+    <form id="UserForm">
+        <label for="Fname">First Name</label> <br>
+        <input type for="text" id="Fname" name="First Name" value=""> <br>
+        
+        <label for="Mname">Middle Name</label> <br>
+        <input type for="text" id="Mname" name="Middle Name" value=""> <br>
+        
+        <label for="Lname">Last Name</label> <br>
+        <input type for="text" id="Lname" name="Last Name" value=""> <br>
+        
+        <label for="age">Age</label> <br>
+        <input type for="text" id="age" name="Age" value=""> <br>
+        
+        <label for="section">Section</label>
+         <br>
+      
+        <input type for="text" id="section" name="Section" value=""> <br>
+        
+        <input type="button" value="Submit" onclick="displayResult()">
+    </form>
+    <p>Click The Button</p>
+    
+    <div id="Result" style="display: none;">
+       <h1> Form Submission Result </h1>
+        <p id="FirstNameDisplay"></p>
+        <p id="MiddleNameDisplay"></p>
+        <p id="LastNameDisplay"></p>
+        <p id="AgeDisplay"></p>
+        <p id="SectionDisplay"></p>
+    </div>
+    
+    <script>
+   function
+      displayResult() {
+               const FirstName = document.getElementById("Fname").value;
+            
+               const MiddleName = document.getElementById("Mname").value;
+               
+              const LastName = document.getElementById("Lname").value;
+              
+                 const Age = document.getElementById("age").value;
+                 
+                    const Section = document.getElementById("section").value;
+                    
+                     document.getElementById("FirstNameDisplay").innerText = "First Name: " + FirstName
+                     
+                      document.getElementById("MiddleNameDisplay").innerText = "Middle Name: " + MiddleName   
+                                       
+                      document.getElementById("LastNameDisplay").innerText = "Last Name: " + LastName
+                      
+document.getElementById("AgeDisplay").innerText = "Age: " + Age
+
+document.getElementById("SectionDisplay").innerText = "Section: " + Section
+
+document.getElementById("Result").style.display = "block";
+}
+</script>
+
+</body>
+</html>
+    
+    
+    
+    
+</body>
+</html>
